@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E5F5"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+            android:id="@+id/toolbarLinear"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#445E75"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="27dp"
+            android:text="Add\nExpense"
+            android:background="#445E75"
+            android:textColor="#FAFAFA"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/amountE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Amount"
+        android:inputType="numberDecimal"
+        android:padding="20dp"
+        android:backgroundTint="#ECECEC"
+        android:textColor="#445E75"
+        android:textColorHint="#8A8A8A" />
+
+    <EditText
+        android:id="@+id/titleE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Title"
+        android:inputType="text"
+        android:padding="20dp"
+        android:backgroundTint="#ECECEC"
+        android:textColor="#445E75"
+        android:textColorHint="#8A8A8A" />
+
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#ECECEC"
+        android:textColor="#445E75"
+        android:textSize="16sp"
+        android:popupBackground="#ECECEC" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/locationButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5A738A"
+        android:paddingHorizontal="30dp"
+        android:text="Add Location"
+        android:textColor="#FAFAFA"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButtonE"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5A738A"
+        android:paddingHorizontal="30dp"
+        android:text="Save"
+        android:textColor="#FAFAFA"
+        android:textSize="15sp"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
